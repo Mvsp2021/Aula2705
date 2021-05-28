@@ -488,7 +488,7 @@ namespace Aula2705
             //    nomes.Add(nome);
             //    Console.Clear();
 
-            //    if(nome == "exit")
+            //    if (nome == "exit")
             //    {
             //        nomes[nomes.Count - 1] = "";
             //        foreach (var item in nomes)
@@ -508,28 +508,44 @@ namespace Aula2705
             ///
 
             //List<double> notas = new List<double>();
-
+            //double nota = 0;
             //while (true)
             //{
-            //    Console.WriteLine("Digite as notas:\nDigite '00' para sair");
-            //    double nota = CRD();
-            //    notas.Add(nota);
-
-
-
-            //    if (nota == 00)
+            //    try
             //    {
-            //        double resultado=0;
-            //        foreach (var item in notas)
-            //        {
-            //            resultado += item;
+            //        Console.WriteLine("Digite as notas:\nDigite '00' para sair");
+            //        nota = CRD();
+            //        notas.Add(nota);
 
+            //        if (nota == 00)
+            //        {
+            //            double resultado = 0;
+            //            foreach (var item in notas)
+            //            {
+            //                resultado += item;
+
+            //            }
+            //            Console.WriteLine("A média desse aluno é: " + resultado / (notas.Count - 1));
+            //            break;
             //        }
-            //        Console.WriteLine("A média desse aluno é: " + resultado / (notas.Count - 1));
-            //        break;
+
+
+
+
+            //    }
+            //    catch (Exception)
+            //    {
+
+            //        Console.WriteLine("Opção inválida");
             //    }
 
+
             //}
+
+
+
+
+
 
 
             /////Exec 03.02
@@ -661,108 +677,381 @@ namespace Aula2705
             //////Exec 05.02
             ///
 
-           
 
 
-            try
+
+
+            //List<string> placas = new List<string>();
+            //List<double> hora = new List<double>();
+            //double hrEntrada = 0, hrSaida = 0;
+            //Console.WriteLine("Estacionamento Virtual");
+            //Console.WriteLine();
+            //int escolha = 0; ;
+            //string placa;
+            //while (true)
+            //{
+            //    try
+            //    {
+
+            //        Console.WriteLine("\t\t***MENU***");
+            //        Console.WriteLine("1 - Entrando");
+            //        Console.WriteLine("2 - Saindo");
+            //        Console.WriteLine("3 - Encerrar");
+            //        Console.WriteLine();
+            //        escolha = CRI();
+
+
+            //        if (escolha == 1)
+            //        {
+            //            //try
+            //            //{
+            //            do
+            //            {
+            //                Console.WriteLine("Qual a placa?");
+            //                placa = CR();
+            //            } while (placa == "");
+
+
+            //            placas.Add(placa);
+            //            Console.WriteLine("Qual a hora de entrada?");
+            //            hrEntrada = CRD();
+            //            hora.Add(hrEntrada);
+            //            //}
+            //            //catch (Exception)
+            //            //{
+
+            //            //    Console.WriteLine("Informação inválida");
+
+            //            //}
+
+
+
+            //        }
+            //        else if (escolha == 2)
+            //        {
+            //            Console.WriteLine("Qual a placa saindo?");
+            //            placa = CR();
+
+            //            if (BuscaEmPlacas(placas, placa) != -1)
+            //            {
+
+            //                Console.WriteLine("Qual a hora de saída?");
+            //                hrSaida = CRD();
+            //                Console.WriteLine();
+            //                Console.WriteLine("Valor a pagar:");
+            //                double valor = (hrSaida - hrEntrada) * 4;
+            //                Console.WriteLine(valor);
+
+
+            //            }
+            //            //else
+            //            //{
+            //            //    Console.WriteLine("Placa não encontrada");
+            //            //}
+
+
+            //        }
+            //        else if (escolha == 3)
+            //        {
+            //            Console.WriteLine("Até logo!!!!!!");
+            //            break;
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Opção inválida");
+            //        }
+
+
+
+
+
+
+
+            //    }
+
+            //    catch (Exception e)
+            //    {
+
+            //        Console.WriteLine("Aconteceu um erro inesperado.");
+            //        Console.WriteLine("Verifique se todos os dados inseridos estão corretos");
+            //        string caminhoerro = @"C:\Users\marcus.pinto\Desktop\erro.txt";
+            //        StreamWriter erro;
+            //        erro = File.CreateText(caminhoerro);
+            //        erro.WriteLine("Erro detectado");
+            //        erro.WriteLine("Data do erro:" + DateTime.Now);
+            //        erro.WriteLine("Detalhes: " + e.ToString());
+            //        erro.WriteLine("Detalhes simplificados: " + e.Message);
+            //        erro.WriteLine("Erro finalizado!");
+            //        erro.Close();
+
+            //    }
+            //    //catch (Exception)
+            //    //{
+            //    //    Console.WriteLine("Informação inválida");
+
+            //    //}
+
+
+
+
+
+            //}
+
+
+            ///////////////////////////////////////////////////////////////////////////////////
+            ////////// Depuração
+
+
+            /////Exec 01
+
+            //while (true)
+            //{
+            //    try
+            //    {
+            //        Console.WriteLine("Insira 1 número");
+            //        Console.WriteLine();
+            //        int x = CRI();
+
+            //        Console.WriteLine(Exec01(x));
+            //        break;
+            //    }
+            //    catch (OverflowException)
+            //    {
+
+            //        Console.WriteLine("Número muito grande");
+            //    }
+            //    catch (FormatException)
+            //    {
+
+            //        Console.WriteLine("Insira um número válido");
+            //    }
+            //}
+
+
+
+
+
+            /////Exec 02
+
+
+
+            //Console.WriteLine("Insira um numero ou sair");
+            //string entrada = Console.ReadLine();
+
+            //Exec02();
+
+
+
+
+            /////Exec 03
+
+            //while (true)
+            //{
+            //    try
+            //    {
+            //        Console.WriteLine("Insira 2 números");
+            //        Console.WriteLine();
+            //        int x = 0;
+            //        int y = 0;
+            //        x = Convert.ToInt32(Console.ReadLine());
+            //        y = Convert.ToInt32(Console.ReadLine());
+
+
+            //        Console.WriteLine(Exec03(x, y));
+            //        break;
+            //    }
+            //    catch (OverflowException)
+            //    {
+
+            //        Console.WriteLine("Número muito grande");
+            //    }
+            //    catch (FormatException)
+            //    {
+
+            //        Console.WriteLine("Digite um número válido");
+            //    }
+            //}
+
+
+            ////Exec 04
+            //while (true)
+            //{
+
+
+            //    try
+            //    {
+            //        Console.WriteLine("Insira 2 números");
+            //        Console.WriteLine();
+            //        int x = 0;
+            //        int y = 0;
+            //        x = CRI();
+            //        y = CRI();
+
+            //        Exec04(x, y);
+            //        break;
+            //    }
+            //    catch (OverflowException)
+            //    {
+
+            //        Console.WriteLine("Número muito grande");
+            //    }
+            //    catch (FormatException)
+            //    {
+
+            //        Console.WriteLine("Digite um número válido");
+            //    }
+
+            //}
+
+
+            ///////Exec 05
+
+            //List<double> num = new List<double>();
+
+            //Console.WriteLine("Insira quantos números quiser números");
+            //Console.WriteLine("Digite '00' quando quiser sair");
+            //Console.WriteLine();
+            //double numeros = 0;
+
+            //while (true)
+            //{
+            //    try
+            //    {
+            //        numeros = CRD();
+            //        num.Add(numeros);
+
+
+            //        if (numeros == 00)
+            //        {
+            //            Console.WriteLine("O maior número da lista é: " + Exec05(num));
+            //            break;
+            //        }
+            //    }
+            //    catch (FormatException)
+            //    {
+
+            //        Console.WriteLine("Digite um número válido");
+            //    }
+
+
+
+            //}
+
+
+
+            /////Exec 06
+
+
+            //while (true)
+            //{
+            //    try
+            //    {
+            //        Console.WriteLine("Insira 1 número");
+            //        Console.WriteLine();
+            //        int x = CRI();
+
+            //        Console.WriteLine(Exec06(x));
+            //        break;
+            //    }
+            //    catch (OverflowException)
+            //    {
+
+            //        Console.WriteLine("Número muito grande");
+            //    }
+            //    catch (FormatException)
+            //    {
+
+            //        Console.WriteLine("Digite um número válido");
+            //    }
+
+
+            //}
+
+
+
+
+            ////////////////////////////////////////////////////
+
+            string[] nomes = new string[4];
+            string[] cpf = new string[4];
+            int[] idade = new int[4];
+            int escolha;
+            while (true)
             {
-
-                List<string> placas = new List<string>();
-                List<double> hora = new List<double>();
-                double hrEntrada = 0, hrSaida = 0;
-                Console.WriteLine("Estacionamento Virtual");
-                Console.WriteLine();
-
-                while (true)
+                try
                 {
-                    Console.WriteLine("\t\t***MENU***");
-                    Console.WriteLine("1 - Entrando");
-                    Console.WriteLine("2 - Saindo");
-                    Console.WriteLine("3 - Encerrar");
+                   
+                    
+                    for (int i = 0; i < nomes.Length; i++)
+                    {
+                        Console.WriteLine("_____________/____________");
+                        Console.WriteLine("Aluno: " + (i + 1));
+                        Console.WriteLine("Nome: " + nomes[i]);
+                        Console.WriteLine("CPF: " + cpf[i]);
+                        Console.WriteLine("Idade: " + idade[i]);
+                    }
+                    do
+                    {
+                        Console.WriteLine("Qual aluno deseja preencher?");
+                        escolha = Convert.ToInt32(Console.ReadLine())/*-1*/;
+                    } while (escolha <= 0 || escolha > 4);
+                    
+
+            
+
+                    //escolha--;
+                    Console.WriteLine("Insira o nome");
+                    string nomeTemp = CR();
                     Console.WriteLine();
-                    int escolha = CRI();
-                    string placa;
+                    Console.WriteLine("Insira o cpf");
+                    string cpfTemp = CR();
+                    Console.WriteLine();
+                    Console.WriteLine("Insira a idade");
+                    idade[escolha - 1] = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine();
 
+                    nomes[escolha - 1] = nomeTemp;
+                    cpf[escolha - 1] = cpfTemp;
+
+                    do
+                    {
+                        Console.WriteLine("Deseja sair?\n1 - sim | 2 - não");
+                        escolha = Convert.ToInt32(Console.ReadLine());
+                    } while (escolha !=1 && escolha != 2);
+                   
+                    
                     if (escolha == 1)
-                    {
-                        try
-                        {
-                            do
-                            {
-                                Console.WriteLine("Qual a placa?");
-                                placa = CR();
-                            } while (placa == "");
-
-
-                            placas.Add(placa);
-                            Console.WriteLine("Qual a hora de entrada?");
-                            hrEntrada = CRD();
-                            hora.Add(hrEntrada);
-                        }
-                        catch (Exception)
-                        {
-
-                            Console.WriteLine("Informação inválida");
-
-                        }
-
-
-
-                    }
-                    else if (escolha == 2)
-                    {
-                        Console.WriteLine("Qual a placa saindo?");
-                        placa = CR();
-
-                        if (BuscaEmPlacas(placas, placa) != -1)
-                        {
-
-                            Console.WriteLine("Qual a hora de saída?");
-                            hrSaida = CRD();
-                            Console.WriteLine();
-                            Console.WriteLine("Valor a pagar:");
-                            double valor = (hrSaida - hrEntrada) * 4;
-                            Console.WriteLine(valor);
-
-
-                        }
-                        else
-                        {
-                            Console.WriteLine("Placa não encontrada");
-                        }
-
-
-                    }
-                    else if (escolha == 3)
                     {
                         break;
                     }
-                    else
-                    {
-                        Console.WriteLine("Opção inválida");
-                    }
 
+                }
+                catch (OverflowException)
+                {
 
+                    Console.WriteLine("Número muito grande");
+                    CR();
+                    Console.Clear();
+                }
+                catch (FormatException)
+                {
+
+                    Console.WriteLine("*********Insira um dado válido*******");
+                    CR();
+                    Console.Clear();
+                }
+                catch (IndexOutOfRangeException)
+                {
+
+                    Console.WriteLine("Digite uma posição válida");
+                    CR();
+                    Console.Clear();
                 }
 
 
             }
-            catch (Exception e)
-            {
 
-                Console.WriteLine("Aconteceu um erro inesperado.");
-                Console.WriteLine("Verifique se todos os dados inseridos estão corretos");
-                string caminhoerro = @"C:\Users\marcus.pinto\Desktop\erro.txt";
-                StreamWriter erro;
-                erro = File.CreateText(caminhoerro);
-                erro.WriteLine("Erro detectado");
-                erro.WriteLine("Data do erro:" + DateTime.Now);
-                erro.WriteLine("Detalhes: " + e.ToString());
-                erro.WriteLine("Detalhes simplificados: " + e.Message);
-                erro.WriteLine("Erro finalizado!");
-                erro.Close();
-                
-            }
+
 
 
 
@@ -771,6 +1060,98 @@ namespace Aula2705
 
 
         }
+
+
+        public static int Exec06(int numero)
+        {
+            if (numero > 0 && numero < 10)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+
+
+        public static double Exec05(List<double> lista)
+        {
+            double maior = 0;
+            foreach (var item in lista)
+            {
+                if (item > maior)
+                {
+                    maior = item;
+                }
+            }
+            return maior;
+        }
+
+
+
+        public static void Exec04(int numero1, int numero2)
+        {
+            if (numero2 < numero1)
+            {
+                Console.WriteLine(numero1 + numero2);
+            }
+            else
+            {
+                Console.WriteLine("Não computável");
+            }
+        }
+
+
+
+
+        public static bool Exec03(int numero1, int numero2)
+        {
+            if (numero1 > numero2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+
+        public static void Exec02()
+        {
+            while (true)
+            {
+                Console.WriteLine("Insira um numero ou sair");
+                string entrada = Console.ReadLine();
+                if (entrada == "sair")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine(entrada);
+                }
+            }
+        }
+
+
+        public static int Exec01(int numero)
+        {
+            if (numero > 0)
+            {
+                return 1;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+
+
+
 
         public static string CR()
         {
